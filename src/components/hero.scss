@@ -1,0 +1,26 @@
+.hero {
+    display: flex;
+    padding: 0 2rem;
+    align-items: center;
+    z-index: 1;
+    height: calc(100vh - 6.25rem);
+
+    &__content {
+        display: flex;
+        align-items: center;
+        &__image {
+            width: 10rem;
+            height: 10rem;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: lightgray;
+        }
+
+        &__text {
+            width: calc(100% - 10rem);
+            padding-left: 2rem;
+        }
+    }
+}

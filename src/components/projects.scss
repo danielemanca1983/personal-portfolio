@@ -1,0 +1,45 @@
+.projects {
+  padding: 0 2rem;
+  h2 {
+    font-size: 2rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid black;
+  }
+}
+
+.project-block {
+  padding: 2rem 0;
+  height: auto;
+  display: grid;
+  grid-template-columns: 60% 40%;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid black;    
+  }
+
+  &__title {
+    font-size: 1.5rem;
+  }
+
+  &__description {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    padding: 2rem 0;
+  }
+
+  &__tags {
+    padding-top: 1.5rem;
+    font-weight: bold;
+    padding-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .project-block {
+    grid-template-columns: 1fr;
+
+    &__right {
+      margin: 2rem 0;
+    }
+  }
+}

@@ -1,0 +1,74 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.contact__form {
+    h1 {
+        margin-bottom: 1rem;
+    }
+    
+    padding: 2rem;
+    max-width: 60%;
+
+    .message {
+        color: white;
+        width: 100%;
+        padding: .5rem;
+        font-weight: bold;
+        border-radius: 4px;
+        margin: 1rem 0;
+        animation: fadeIn .7s;
+        &--error {
+            background-color: #c00707;
+        }
+
+        &--success {
+            background-color: rgb(8, 148, 8);
+        }
+    }
+
+    &__label, &__input {
+        margin-bottom: 1.35rem;
+        display: block;
+    }
+
+    &__label {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    &__input {
+        padding: .8rem;
+        width: 100%;
+        border-radius: 4px;
+        border: 1px solid black;
+
+        &::placeholder {
+            color: gray;
+            font-size: 1.1rem;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        &--textarea {
+            height: 6rem;
+        }
+
+        &--select {
+            option {
+                font-size: 1.1rem;
+                color: gray;
+                font-family: 'Source Sans Pro', sans-serif;
+            }
+        }
+    }
+}

@@ -1,0 +1,70 @@
+.main__header {
+  display: flex;
+  height: 5rem;
+  padding: 0 2rem;
+  align-items: center;
+  border-bottom: 1px solid black;
+  justify-content: space-between;
+
+  a {
+    color: white;
+    text-decoration: none;
+
+    h1 {
+      padding: 1rem;
+      color: white;
+      background-color: black;
+      border-radius: 50%;
+      font-size: 1.35rem;
+    }
+  }
+
+  ul {
+    list-style: none;
+  }
+}
+
+.menu__btn {
+  width: 5.5rem;
+  height: 2.5rem;
+  outline: none;
+  font-size: 1.2rem;
+  display: flex;
+  cursor: pointer;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid black;
+  background-color: transparent;
+  border-radius: 1.5rem;
+}
+
+.main__nav__list {
+  top: 5rem;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: calc(100vh - 5rem);
+  z-index: 10;
+  left: -100%;
+  display: flex;
+  position: absolute;
+  background-color: black;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: left .3s ease-in-out;
+
+  &.active {
+    left: 0;
+  }
+
+  li {
+    padding: 1rem 0;
+
+    a {
+        font-size: 3rem;
+    }
+  }
+}
+
+

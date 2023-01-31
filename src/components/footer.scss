@@ -1,0 +1,26 @@
+.main__footer {
+    height: 5rem;
+    display: flex;
+    padding: 0 2rem;
+    align-items: center;
+    border-top: 1px solid black;
+    justify-content: space-between;
+
+
+    &__social-icons {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .main__footer {
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        &__title,
+        &__social-icons,
+        &__copyright {
+            padding: 1rem 0;
+        }
+    }
+}
