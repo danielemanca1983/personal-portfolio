@@ -4,6 +4,8 @@ import './contact-form.scss'
 
 const ContactForm = () => {
 
+  // Set Data
+
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
