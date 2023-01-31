@@ -79,8 +79,8 @@ const ContactForm = () => {
       });
   };
 
-
   return (
+
     <section className="contact__form">
       <h1>I would love to hear from you, please get in touch.</h1>
       <form onSubmit={handleSubmit}>
@@ -96,7 +96,6 @@ const ContactForm = () => {
           onChange={handleChange}
           className="contact__form__input" 
           placeholder="Full Name" 
-          required
         />
         
         {errors.fullName && (
@@ -115,7 +114,6 @@ const ContactForm = () => {
           onChange={handleChange}
           className="contact__form__input" 
           placeholder="Email Address" 
-          required
         />
         {errors.email && (
           <p className="message message--error">{errors.email}</p>
@@ -145,7 +143,6 @@ const ContactForm = () => {
           value={formData.message}
           onChange={handleChange}
           className="contact__form__input contact__form__input--textarea" placeholder="Your Message..."
-          required  
         >
         </textarea>
         
