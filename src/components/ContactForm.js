@@ -77,7 +77,7 @@ const ContactForm = () => {
           form: "An error occurred while submitting the form"
         });
       });
-  };
+    };
 
   return (
 
