@@ -9,13 +9,14 @@
         display: flex;
         align-items: center;
         &__image {
-            width: 10rem;
-            height: 10rem;
-            border-radius: 50%;
+            img {
+                width: 10rem;
+                height: 10rem;
+                border-radius: 50%;
+            }
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: lightgray;
         }
 
         &__text {
