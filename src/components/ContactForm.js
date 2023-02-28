@@ -82,78 +82,85 @@ const ContactForm = () => {
   return (
 
     <section className="contact__form">
-      <h1>I would love to hear from you, please get in touch.</h1>
-      <form onSubmit={handleSubmit}>
-        <label 
-          htmlFor="fullName" 
-          className="contact__form__label"
-        >Your Name</label>
-        <input 
-          type="text"
-          id="fullName"
-          name="fullName"
-          value={formData.fullName}
-          onChange={handleChange}
-          className="contact__form__input" 
-          placeholder="Full Name" 
-        />
-        
-        {errors.fullName && (
-          <p className="message message--error">{errors.fullName}</p>
-        )}
+      <div className="contact__form__left">
+        <h1>I would love to hear from you, please get in touch.</h1>
+        <form onSubmit={handleSubmit}>
+          <label 
+            htmlFor="fullName" 
+            className="contact__form__label"
+          >Your Name</label>
+          <input 
+            type="text"
+            id="fullName"
+            name="fullName"
+            value={formData.fullName}
+            onChange={handleChange}
+            className="contact__form__input" 
+            placeholder="Full Name" 
+          />
+          
+          {errors.fullName && (
+            <p className="message message--error">{errors.fullName}</p>
+          )}
 
-        <label 
-          htmlFor="email" 
-          className="contact__form__label"
-        >Email Address</label>
-        <input 
-          type="email"
-          id="email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-          className="contact__form__input" 
-          placeholder="Email Address" 
-        />
-        {errors.email && (
-          <p className="message message--error">{errors.email}</p>
-        )}
+          <label 
+            htmlFor="email" 
+            className="contact__form__label"
+          >Email Address</label>
+          <input 
+            type="email"
+            id="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            className="contact__form__input" 
+            placeholder="Email Address" 
+          />
+          {errors.email && (
+            <p className="message message--error">{errors.email}</p>
+          )}
 
-        <label htmlFor="selectOption" className="contact__form__label">What are you interested in?</label>
-        <select 
-          name="selectOption"
-          id="selectOption"
-          value={formData.selectOption}
-          onChange={handleChange}
-          className="contact__form__input contact__form__input--select">
-          <option value="project">Web Development Consulation</option>
-          <option value="project">Web Development Project</option>
-          <option value="inquiry">Web Development Inquiry</option>
-          <option value="training">Web Development Training</option>
-        </select>
-        
-        {errors.selectOption && (
-          <p className="message message--error">{errors.selectOption}</p>
-        )}
-        
-        <label htmlFor="message" className="contact__form__label">Message</label>
-        <textarea 
-          id="message"
-          name="message"
-          value={formData.message}
-          onChange={handleChange}
-          className="contact__form__input contact__form__input--textarea" placeholder="Your Message..."
-        >
-        </textarea>
-        
-        {errors.message && (
-          <p className="message message--error">{errors.message}</p>
-        )}
-        
-        <button type="submit" className="btn btn--lg">Submit</button>
+          <label htmlFor="selectOption" className="contact__form__label">What are you interested in?</label>
+          <select 
+            name="selectOption"
+            id="selectOption"
+            value={formData.selectOption}
+            onChange={handleChange}
+            className="contact__form__input contact__form__input--select">
+            <option value="project">Web Development Consulation</option>
+            <option value="project">Web Development Project</option>
+            <option value="inquiry">Web Development Inquiry</option>
+            <option value="training">Web Development Training</option>
+          </select>
+          
+          {errors.selectOption && (
+            <p className="message message--error">{errors.selectOption}</p>
+          )}
+          
+          <label htmlFor="message" className="contact__form__label">Message</label>
+          <textarea 
+            id="message"
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+            className="contact__form__input contact__form__input--textarea" placeholder="Your Message..."
+          >
+          </textarea>
+          
+          {errors.message && (
+            <p className="message message--error">{errors.message}</p>
+          )}
+          
+          <button type="submit" className="btn btn--lg">Submit</button>
 
-        {success && <p className="message message--success">{success}</p>}
-      </form>
+          {success && <p className="message message--success">{success}</p>}
+        </form>
+      </div>
+      <div className="contact__form__right">
+        <h2>You can also contact me via:</h2>
+        <p><strong>Email:</strong> <a href="mailto:danmanc83@yahoo.co.uk">danmanc83@yahoo.co.uk</a></p>
+        <p><strong>WhatsApp:</strong> +447810861035</p>
+      </div>
     </section>
   )
 }
