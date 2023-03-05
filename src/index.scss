@@ -19,6 +19,7 @@ h1 {
   font-size: 3rem;
 }
 
+
 .btn {
   color: white;
   border: none;
@@ -40,5 +41,11 @@ h1 {
 
   &--lg {
     padding: .75rem 2.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2.25rem;
   }
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import './hero.scss'
-import profilepicture from '../assets/profile_photo.png'
+import profilepicture from '../assets/profile.jpg'
 
 const Hero = () => {
   return (
@@ -11,7 +11,7 @@ const Hero = () => {
         </div>
         <div className="hero__content__text">
           <h1>Front-End Engineer</h1>
-          <h2>Based in London, UK</h2>
+          <p><strong>Based in London, UK</strong></p>
         </div>
       </div>
     </section>
