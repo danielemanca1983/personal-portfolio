@@ -10,12 +10,12 @@ const Footer = () => {
         <h2>Daniele Manca</h2>
       </div>
       <div className="main__footer__social-icons">
-        <Link to="/">
+        <a href="https://github.com/danielemanca1983" target="_blank" rel="noreferrer">
           <FaGithubSquare />
-        </Link>
-        <Link to="/">
+        </a>
+        <a href="https://www.linkedin.com/in/dmanca/" target="_blank" rel="noreferrer">
           <FaLinkedin />
-        </Link>
+        </a>
       </div>
       <div className="main__footer__copyright">
         <p>Copyright 2022</p>
